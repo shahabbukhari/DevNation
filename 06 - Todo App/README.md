@@ -29,7 +29,7 @@ Users should be able to:
 - **Bonus**: Drag and drop to reorder items on the list
 
 ### Screenshot
-![Application ScreenShot](\images\screencapture.png)
+![Application ScreenShot](.\images\screencapture.png)
 
 ### Links
 
