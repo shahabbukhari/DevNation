@@ -29,11 +29,11 @@ Users should be able to:
 - **Bonus**: Drag and drop to reorder items on the list
 
 ### Screenshot
-![Application ScreenShot](images\screencapture.png)
+![Application ScreenShot](\images\screencapture.png)
 
 ### Links
 
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL here](https://shahabbukhari.github.io/DevNation/06%20-%20Todo%20App/index.html)
 
 ### Built with
 
