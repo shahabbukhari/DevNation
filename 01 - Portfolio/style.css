@@ -1,0 +1,197 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('http://fonts.cdnfonts.com/css/agustina');
+/* fonts end */
+*{
+    --primary-color: #F9A826;
+    --secondary-color: #3f3d56;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a,p,h1,h2,h3,h4,li{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
+.brand p{
+    font-size: 2.2rem;
+    margin-left: 10px;
+}
+.brand a{
+    text-decoration: none;
+    color: black;
+}
+.name{
+    font-family: 'Agustina', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+.link-menu-list {
+    list-style: none;
+    display: flex;
+}
+.link-menu-list li {
+    margin: 0 10px;
+}
+
+.link-menu-list a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #000 ;
+    font-size: 1.4rem;
+    transition: .2s all ease-in-out;
+}
+
+.link-menu-list a:hover {
+    color: var(--primary-color);
+}
+
+#intro {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 10% 5% 10%;
+}
+.about {
+    flex-basis: 50%;
+}
+.pic {
+    flex-basis: 50%;
+}
+.about > h1 {
+    font-size: 70px;
+    color: var(--secondary-color);
+}
+.about > p {
+    margin-top: 35px;
+    font-size: 25px;
+    color: #8D949C;
+    line-height: 40px;
+    width: 84%;
+}
+.icon-button {
+    padding: 10px;
+    font-size: 1.4rem;
+    /* margin: 5px 10px */
+    text-align: center;
+    border-radius: 50%;;
+    /* background-color: #fff; */
+    color: #fff;
+    display: inline-block;
+    width: 3.0rem;
+    height: 3.0rem;
+    margin-left: 8px;
+    transition: .5s all ease-in-out;
+}
+.github,.dev {
+    background-color: black;
+}
+.linkedin {
+    background-color: #0e76a8;
+}
+.google {
+    background-color: #ea4335;
+}
+.hackerrank {
+    background-color: #2AB758;
+}
+
+.icon-button:hover {
+    background-color: var(--secondary-color);
+}
+.social-media-div {
+    margin-top: 20px;
+}
+
+.intro-btns {
+    display: flex;
+    margin-top: 30px;
+}
+
+.intro-btns a{
+    /* font-size: 20px; */
+    text-decoration: none;
+    padding: 13px 22px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight:bold; 
+    border-radius:8px;
+    transition: all .3s ease-in-out 0s;
+    margin-right: 50px;
+    border: 2px solid var(--primary-color);
+    margin-top: 15px;
+}
+.intro-btns a:last-child() {
+    margin-right: 0;
+}
+.intro-btns a:hover{
+    background-color: #ffffff;
+    color: var(--primary-color);
+    transition: all .3s ease 0s;
+    transform: translateY(-3px);
+}
+
+/* SKILlS SECTION*/
+#skills {
+    display: flex;   
+    padding: 5% 6.6% 5% 6.6%;
+}
+#skills > .pic {
+    flex-basis: 50%;
+}
+#skills > .skills {
+    flex-basis: 50%;
+    color: var(--secondary-color);
+}
+.pic > img {
+    width: 600px;
+    object-fit: contain;
+}
+.skills-heading {
+    font-size: 4.2rem;
+}
+.subTitle {
+    font-size: 1.5rem;
+}
+.software-skills-div > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em 5em;
+    margin-top: 20px;
+    justify-content: center;
+}
+.software-skill{
+    font-size: 5rem;
+    text-align: center;
+}
+.software-skill > p{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.software-skill > *{
+    transition: .2s all ease-in-out;
+}
+
+.software-skill > i:hover{
+    color: var(--primary-color);
+}
+.software-skill > i:hover ~ p{
+    color: var(--primary-color);
+}

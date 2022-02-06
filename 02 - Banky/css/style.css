@@ -1,0 +1,464 @@
+/* 'Didact Gothic' 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:wght@500;600;700;800&display=swap');
+/* 'Circular Std', sans-serif */
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
+/* Reset all settings */
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Variables for later use */
+:root {
+    --primary-color: #1E1F31;
+    --accent-color: #3FDEAE;
+    --btn-color: #fdd241;
+    --bg-light-gray: #F8F8F8;
+    --light-gray: rgba(255, 255, 255, 0.657);
+    --dark-gray: rgba(0, 0, 0, 0.582);
+    font-size: 15px;
+}
+
+/* Scrol Bahavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* NavBar */
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 222;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10%;
+
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.brand h1 {
+    font-size: 1.7rem;
+}
+
+.buy a {
+    color: white;
+    text-decoration: underline;
+}
+
+.pages ul {
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.pages ul li a {
+    color: var(--light-gray);
+    transition: .3s all ease-in;
+}
+
+/* .Navbar Blury hover Effect */
+.pages ul li {
+    transition: .2s all ease-in-out;
+}
+
+.pages ul:hover li {
+    filter: blur(2px);
+}
+
+.pages ul li:hover {
+    filter: blur(0);
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+/* Header */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 17% 160px 17%;
+
+    background-color: var(--primary-color);
+}
+
+.tag-line {
+    flex-basis: 50%;
+    color: white;
+}
+
+.wraper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wraper h1 {
+    font-size: 3.4rem;
+    font-weight: 800;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+
+    border: 2px solid var(--accent-color);
+    width: 165px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.wraper p {
+    font-size: 1.2rem;
+    color: var(--light-gray);
+    line-height: 1.7em;
+}
+
+.btns {
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
+
+.download-btn {
+    padding: 20px;
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.btns .buy-btn {
+    color: white;
+    font-weight: 500;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.buy-btn svg {
+    fill: white;
+    position: relative;
+    top: 5px;
+    object-fit: contain;
+    width: 25px;
+    height: 25px;
+    transition: .3s all ease-in;
+}
+
+.buy-btn:hover svg {
+    margin-left: 8px;
+}
+
+.img {
+    flex-basis: 50%;
+}
+
+.img img {
+    width: 480px;
+    object-fit: contain;
+}
+
+/* Companies Section */
+.companies {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20%;
+    align-items: center;
+    gap: 50px;
+    background-color: white;
+}
+
+.companies p {
+    font-size: 1.3rem;
+    max-width: 15%;
+}
+
+.companies img {
+    object-fit: contain;
+    min-width: 130px;
+}
+
+.test {
+    height: 100vh;
+}
+
+/* How it works Section */
+#how-works {
+    padding: 120px 15%;
+
+    background-color: var(--bg-light-gray);
+}
+
+/* Heading */
+.heading h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.highlight {
+    color: var(--accent-color);
+    background-image: url("https://assets.website-files.com/6115ba6494f278764d0490f1/61165ea66534b33a0d0cffa6_Text%20Span%20Shape.svg");
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 280px;
+    padding: 30px 25px;
+    text-align: left;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    transition: .2s all ease-in;
+}
+
+.divider {
+    background-color: rgba(128, 128, 128, 0.288);
+    width: 1.3px;
+    margin: 0 8px;
+}
+
+/* Card Heading */
+.card-heading {
+    font-size: 1.5rem;
+}
+
+/* Cara Paragraph */
+.card-para {
+    color: var(--dark-gray);
+    line-height: 23px;
+}
+
+/* Card Image */
+.card img {
+    object-fit: contain;
+    width: 150px;
+    align-self: center;
+
+    filter: drop-shadow(0 0mm 15mm #a7abd1);
+}
+
+
+.card1 img {
+    width: 195px;
+}
+
+.card3 img {
+    width: 138px;
+}
+
+.card4 img {
+    width: 118px;
+}
+
+/* card hover effect */
+.card:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: crosshair;
+}
+
+.card:hover p {
+    color: white;
+}
+
+.card:hover img {
+    filter: drop-shadow(0 0mm 0mm transparent);
+}
+
+/* Features Section */
+body {
+    background-color: var(--bg-light-gray);
+}
+
+.margin-padding {
+    padding: 120px 10%;
+    margin: 0 auto;
+}
+
+#features {
+    width: 93vw;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 56%);
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 350px));
+    grid-template-rows: auto auto;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    /* ali */
+    gap: 30px
+}
+
+.f-card {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+
+    background-color: white;
+    border-radius: 17px;
+    transition: .3s all ease-in;
+}
+
+.f-card .f-icon {
+    font-size: 1.3rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-light-gray);
+}
+
+.f-card-4 .f-icon,
+.f-card-5 .f-icon,
+.f-card-6 .f-icon {
+    width: 130px;
+}
+
+.f-card-2 .f-icon,
+.f-card-3 .f-icon {
+    width: 120px;
+}
+
+
+/* Cards text */
+.f-card .text h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 9px auto 9px auto;
+}
+
+.f-card .text p {
+    font-size: .9rem;
+}
+
+/* Hover Effect Features Card */
+.f-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: crosshair
+}
+
+/* Animated Coin */
+.animation {
+    position: relative;
+    top: -20px;
+    float: right;
+    right: 10%;
+}
+
+.animation img {
+    object-fit: contain;
+    width: 100px;
+}
+
+.slide-top {
+    animation: slide-top 2.5s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+/* Buy Template Section */
+#buy-template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    gap: 120px;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+}
+
+.buy-1 {
+    flex-basis: 50%;
+}
+
+.buy-2 {
+    flex-basis: 50%;
+}
+
+.buy-text {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.buy-pic {
+    flex: 1 3;
+}
+
+.buy-pic img {
+    object-fit: contain;
+    width: 450px;
+}
+
+.buy-text h1 {
+    font-size: 3rem;
+    width: 70%;
+}
+
+.buy-2 .buy-text h1 {
+    width: 80%;
+}
+
+.buy-text p {
+    color: var(--dark-gray);
+    line-height: 1.5em;
+    width: 70%;
+}
+
+.cart {
+    position: relative;
+    top: 70px;
+    left: 10% ;
+}
