@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+    /* Primary */
+    --Pri-Bright-Blue: hsl(220, 98%, 61%);
+    --Background-gradients: linear-gradient(90deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.light-theme {
+    /* Neutral */
+    /* Light Theme */
+    /* Input and todo area color */
+    --input-area: hsl(0, 0%, 98%);
+
+    /* Background color */
+    --background: hsl(233, 11%, 84%);
+
+    /* Text Color */
+    --text-color: hsl(235, 19%, 35%);
+    /* Text Cross */
+    --cross-text: hsl(236, 9%, 61%);
+
+    /* Bottom filter bar */
+    --filters-color: hsl(234, 39%, 85%);
+}
+
+.dark-theme {
+    /* Neutral */
+    /* Light Theme */
+    /* Input and todo area color */
+    --input-area: hsl(235, 24%, 19%);
+
+    /* Background color */
+    --background: hsl(235, 21%, 11%);
+
+    /* Text Color */
+    --text-color: hsl(234, 39%, 85%);
+    /* Text Cross */
+    --cross-text: hsl(233, 14%, 35%);
+    --cross-text-dark1: hsl(237, 14%, 26%);
+
+    /* Bottom filter bar */
+    --filters-color: hsl(234, 11%, 52%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+/* Font */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: var(--background);
+}
+
+
+.scene {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.scene img {
+    object-fit: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 2em;
+
+    margin: 5vh auto;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px;
+    /* border: 2px solid black; */
+}
+
+.todo-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.todo-head h1 {
+    letter-spacing: .4em;
+}
+
+.todo-mode img {
+    width: 30px;
+    cursor: pointer;
+    transition: .2s all ease-in;
+}
+
+.todo-mode img:hover {
+    transform: scale(120%);
+}
+
+.todo-input {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+}
+
+.todo-add {
+    background-color: var(--input-area);
+    color: var(--cross-text);
+    font-size: 1.3rem;
+    padding: 20px;
+    height: 100%;
+    cursor: pointer;
+
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.todo-add i {
+    margin: 2px;
+}
+
+.todo-add:hover {
+    color: var(--cross-text-dark);
+}
+
+.todo-input-text {
+    width: 100%;
+    padding: 20px 15px 20px 0px;
+    font-size: 1rem;
+    border: transparent;
+    background-color: var(--input-area);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.todo-input-text:focus {
+    outline: none;
+}
+
+
+.todos {
+    background-color: var(--input-area);
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    padding: 15px;
+    border-bottom: 1px solid var(--background);
+}
+
+.todo-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox]:checked+p.todo-text {
+    text-decoration: line-through;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.delete-todo {
+    cursor: pointer;
+    display: none;
+    transition: .2s all ease-in-out;
+    /* font-size: .6rem; */
+    color: var(--text-color);
+}
+
+.delete-todo:hover {
+    transform: scale(120%);
+}
+
+.todo:hover .delete-todo {
+    display: block;
+}
+
+.todo-status {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.todo-filters {
+    flex-basis: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.todo-filters p {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.todo-left {
+    flex-basis: 1;
+    cursor: pointer;
+}
+
+.clear-todo {
+    flex-basis: 1;
+    cursor: pointer;
+}
