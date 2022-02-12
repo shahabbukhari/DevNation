@@ -31,7 +31,7 @@ In the process of building for two scenarios:
 
 ### Links
 
-- Live Site URL: [live site URL here](https://shahabbukhari.github.io/DevNation/08%20-%20Movie%20Ap/index.html)
+- Live Site URL: [live site URL here](https://shahabbukhari.github.io/DevNation/08%20-%20Movie%20App/index.html)
 
 ### Built with
 - Semantic HTML5 markup
