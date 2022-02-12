@@ -1,4 +1,4 @@
-# Note Taking App: My Notebook
+# Movie App
 
 This is a solution the complete code of my movie app.
 
